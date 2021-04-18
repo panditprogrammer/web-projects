@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator : PanditProgrammer</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            user-select: none;
+        }
+
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: radial-gradient(rgb(192, 114, 12)20%,rgb(36, 161, 10));
+
+        }
+        .main{
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px groove #f5f3f3;
+            background: rgb(241, 241, 241);
+            box-shadow: -2px 4px 6px 2px rgb(243, 240, 200);
+            outline: none;
+            
+
+        }
+        h2{
+            margin: 10px auto;
+            padding: 5px;
+            font-family: cursive,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #555555;
+        }
+        #password{
+            margin: 10px auto;
+            padding: 5px 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            user-select:text;
+            border-style: outset;
+            border-color: #f5f3f3;
+            border-radius: 7px;
+            outline: none;
+            width: 200px auto;
+            letter-spacing: 1px;
+            color: rgb(4, 14, 41);
+
+            
+        }
+        
+        #btn{
+            text-decoration: none;
+            color: rgb(58, 77, 83);
+            border: 0.1px solid gray;
+            border-radius: 3px ;
+            border-color: #ffffff;
+            padding: 5px 8px;
+            font-weight: 600;
+            font-size: 18px;
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+            transition: 0.5s ease;
+        }
+        #btn:hover{
+            box-shadow: -1px 3px 6px 1px  #56666d;
+        }
+        
+        
+        h4{
+            display: block;
+            margin: 30px auto;
+            color: tan;
+            padding: 3px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Random Password Generator </h2>
+        <input type="text" name="" id="password" readonly="">
+        <br><a href="#" id="btn"  onclick="getpass()">Generate Password</a>
+        <h4><span>Note</span> : Generate trusted and secure Password and use in your any Accounts.</h4>
+    </div>
+    
+    <script>
+        function getpass() {
+            var chars = "abcdedfhijkKLMNOPQRSTUwxyz1234567890!@#$%&*()ABCDEFGHIJlmnopqrstuvVWXYZ{}[]";
+            var passlenght =15;
+            var password ="";
+            for (var i=0;i<passlenght;i++){
+                var randomNumber = Math.floor(Math.random()* chars.length);
+                password+= chars.substring(randomNumber,randomNumber+1);
+            }
+            document.getElementById("password").value =password;
+
+        }
+    </script>
+</body>
+</html>

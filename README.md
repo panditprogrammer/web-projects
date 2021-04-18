@@ -27,3 +27,13 @@ BMI (body mass index calculator) using html css javascript
 Here is the link of Website https://panditprogrammer.github.io/web5/
 here is the preview
 <img width="349" alt="calculator" src="https://user-images.githubusercontent.com/65272533/112954176-c9492e80-915b-11eb-8547-46cf9b812e01.PNG">
+
+
+
+# Strong  trusted and secure password generator in javascript 
+
+Here is link https://panditprogrammer.github.io/web6/
+# Password Generator Tool : Generating Secure Password by just one click
+
+<img width="251" alt="password" src="https://user-images.githubusercontent.com/65272533/112955978-999b2600-915d-11eb-80df-350d5fd49429.PNG">
+
