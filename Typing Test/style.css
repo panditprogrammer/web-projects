@@ -1,0 +1,200 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    
+    background: radial-gradient( #f7dab4,#d2ebd5);
+    
+  }
+  
+  .heading{
+      text-align: center;
+      font-family: cursive;
+      color: rgb(127, 173, 127);
+  }
+  .container{
+    position: relative;
+    background: rgb(183, 206, 183);
+    width:80%;
+    margin: 20px auto;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 7px 10px rgb(185, 201, 185);
+    
+  }
+  .app-title{
+    
+    font-family:  sans-serif;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .score-container{
+    margin: 50px auto;
+    height: 240px;
+    width: 240px;
+    background-color: transparent;
+    border-color:  rgba(255, 255, 255,0.8);
+    border-width: 5px;
+    border-style: dotted;
+    border-radius: 130%;
+  }
+  #score{
+    margin: 10px auto;
+    padding: 8px;
+    text-align: center;
+    font-family:  sans-serif;
+    font-weight: bold;
+    
+  }
+
+  .text-container{
+    position: relative;
+    height: 180px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    top: 20px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 20px;
+    background:rgba(31, 119, 31, 0.082);
+    border-color: #7c7c7c;
+  }
+  .text-1{
+    font-size: 26px;
+    font-family:  sans-serif;
+    font-weight: bold;
+    display: inline;
+  }
+  .typing-area-container{
+    width: 80%;
+    margin: 5px auto;
+  }
+  #typing-area{
+    position: relative;
+    top: 20px;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    font-family:  sans-serif;
+    font-weight: bold;
+    outline: none;
+    color:#340F6E;
+    padding: 2px 0px 2px 15px;
+    border-style: solid;
+    border-radius: 20px;
+    color:#340F6E;
+
+  }
+  
+  .typing-menu{
+    height: 50%;
+    background-color:rgba(52, 15, 110);
+  }
+  
+  .score-menu{
+    height: 50%;   
+    background-color:rgba(52, 15, 110,0.9);
+  }
+  #dispi{
+      margin: 30px;
+  }
+  .typed{
+    font-family:  sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
+    color:#340F6E;
+    font-size: 20px;
+  }
+  #correct{
+    background-color: greenyellow;
+    padding: 3px;
+  }
+  #wrong{
+    background-color: red;
+    padding: 3px;
+  }
+  #cWord{
+    padding: 2px;
+    background-color: rgb(219, 235, 219);
+    border-style: none;
+    border-radius: 6px;
+  }
+  .speed{
+    margin-top: 80px;
+    text-align: center;
+    font-family:  sans-serif;
+    font-weight: bold;
+    color: #340F6E;
+  }
+  #wpm{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family:  sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color:#bbbabd;
+    height: 150px;
+    width: 150px;
+    border-style: groove;
+    border-radius: 20px;
+    color:white;
+    
+  }
+  #wp{
+    font-family:  sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color:white;
+    text-align: center;
+    margin-top: -40px;
+  }
+  #and{
+    margin-top: 30px;
+    text-align:center;
+    font-family:  sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #340F6E;
+    
+  }
+  #acc{
+    text-align: center;
+    font-family:  sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #340F6E;
+  }
+  #accuracy{
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    background-color: red;
+    padding: 5px;
+    font-family:  sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+
+  }
+  #result{
+      width: 100%;
+      margin: auto;
+      padding: 10px;
+  }
+
+  .code{
+    position: absolute;
+    top: 500px;
+    left: 250px;
+    font-family:  sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255,0.6);
+    
+  }
