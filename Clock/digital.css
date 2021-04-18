@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background: rgba(170, 196, 226, 0.493);
+}
+.outerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    background: rgba(177, 214, 118, 0.438);
+    border: 2px solid rgb(213, 230, 241);
+    border-radius: 5%;
+    background-blend-mode: lighten;
+}
+
+.time{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgba(106, 145, 43, 0.425);
+    border-style: groove;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.mini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100px;
+    padding: 5px;
+    border: 5px solid rgba(199, 199, 199, 0.342);
+    border-radius: 2px;
+    border-style: groove;
+    font-size: 28px;
+    color: #000000;
+    background: #f7f7f7;
+
+}
+
+#analog{
+    text-decoration: none;
+    border: 1px solid green;
+    padding: 5px 8px;
+    text-transform: capitalize;
+    margin: 5px auto;
+    background: transparent;
+    color: black;
+    font: cursive;
+    font-weight: 700;
+    border-radius: 3px ;
+    transition: 0.5s ease;
+    
+
+}
+.analog{
+    height: 100px;
+    width: 100%;
+    margin:  0px auto;
+    padding: 10px;
+    text-align: center;
+}
+#analog:hover{
+    background: rgb(130, 212, 130);
+    color: white;
+}
+
+@media screen and (max-width:300px){
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+
+}
