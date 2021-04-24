@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(34deg,rgba(255, 166, 0, 0.733),rgba(0, 128, 0, 0.685) ,rgba(255, 0, 0, 0.658));
+
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(233, 135, 7);
+    
+}
+
+/* top heading   */
+header h2{
+    text-align: center;
+    line-height: 70px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    color:rgb(54, 141, 3);
+    text-shadow: 0px 14px 3px rgba(0,0,0,0.31);
+}
+/* main game body container  */
+.gamecontainer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* middle game container  */
+
+.game{
+    width: 360px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(25deg,orange,30%,skyblue);
+    box-shadow: 0px 5px 10px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 5px 10px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 10px -1px rgba(0,0,0,1);
+    border-radius: 5px;
+                
+}
+
+.game h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* score text  */
+.score{
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    font-size: 22px;
+    font-family: cursive;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* user message  */
+.msg{
+    color: rgb(49, 49, 49);
+}
+
+.game input{
+    width: 200px;
+    padding: 8px 15px;
+    font-size: 15px;
+    text-align: center;
+    margin:5px;
+    outline: none;
+    border: none;
+    border-radius: 22px;
+    
+
+}
+.game button{
+    width: 150px;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin:5px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(2, 175, 2);
+    transition: all 0.5s;
+    color: white;
+    cursor: pointer;
+}
+/* button style here  */
+.game button:hover{
+    width: 200px;
+    letter-spacing: 0.1em;
+}
+/* this is for toggle input  */
+.hidden{
+    display: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    padding:5px;
+    background: black;
+    display: block;
+    width: 100%;
+
+}
+footer p{
+    font-size: 12px;
+    padding: 3px;
+    text-align: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+
+/* responsive media query style here  */
+@media screen and (max-width: 600px)
+{
+    header h2{
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 0;
+        font-weight: bolder;
+        color:rgb(32, 100, 0);
+        text-shadow: 0px 14px 3px rgba(61, 60, 60, 0.699);
+    }
+
+
+}
