@@ -98,6 +98,7 @@ function addBookFunction(e) {
     //checking validation 
     if (display.validate(book)) {
         display.addBookFunction(book);
+        addToStorage();
         display.clearInputField(); //clear input field
         display.showMessage("success"," Book added successfully!")
     }
@@ -108,3 +109,11 @@ function addBookFunction(e) {
 
 }
     
+
+function addToStorage()
+{
+    let bookDetails = "python,java,php";
+    let bookData = JSON.stringify(bookDetails);
+    localStorage.setItem("book1",bookData);
+    
+}
