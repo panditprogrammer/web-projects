@@ -115,8 +115,9 @@ header h2{
 }
 
 footer{
-    position: absolute;
+    position: fixed ;
     bottom: 0px;
+    left:0px;
     padding:5px;
     background: black;
     display: block;
