@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(src/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: skyblue;
+}
+
+#game{
+    width: 400px;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: rgb(78, 38, 38);
+    position: relative;
+    left: 400px;
+    border: 5px groove rgb(53, 27, 27);
+    animation: block 3s infinite linear;
+}
+
+#hole{
+    width: 50px;
+    height: 150px;
+    position: relative;
+    background-color: skyblue;
+    left: 400px;
+    top: -500px;
+    border-radius: 5px;
+    animation: block 3s infinite linear;
+
+}
+
+#bird{
+    width: 50px;
+    height:50px;
+    background-image: url(src/bird.png);
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    border-radius: 5%;
+    z-index: 99999;
+}
+
+/* .gameover styled here  */
+.gameOverDiv{
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    background-image: linear-gradient(skyblue ,lightgreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.gameover{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+    text-align: center;
+    color: red;
+
+}
+.gameover span{
+    color: green;
+    font-size: 23px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.gameOverDiv a{
+    border: 1px solid green;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 8px 12px;
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: all 0.5s;
+    
+}
+.gameOverDiv a:hover{
+    color: green;
+    background-color: transparent;
+} 
+
+.title{
+    width: 100%;
+    margin: auto;
+    padding: 4px;
+    font-size: 35px;
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,cursive;
+
+}
+
+
+
+@keyframes block{
+    0%{
+        left: 400px;
+    }
+    100%{
+        left: -50px;
+    }
+
+}
+
