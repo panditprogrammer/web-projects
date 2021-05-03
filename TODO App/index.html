@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO Application | Pandit Programmer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar"><a href="index.html" class="home">@TODO</a> <a
+                    href="https://www.google.com/search?q=todo+list" target="blank" class="help">Get Help</a></div>
+        </nav>
+    </header>
+    <h1 class="heading">Remind your important work with TODO list</h1>
+    <div class="main_div">
+        <span class="error"></span>
+
+        <div class="form">
+            <div class="form_element"> <label for="title">Title</label>
+                <input type="text" name="input" id="title">
+            </div>
+            <div class="form_element"> <label for="input">Description</label>
+                <textarea name="input" id="input" cols="4" rows="10"></textarea>
+            </div>
+            <div class="form_element"> <button id="addbtn">Add New</button>
+            </div>
+        </div>
+
+        <div class="select">
+            <strong>Filter</strong>
+            <select name="todoList" id="todoList">
+                <option value="All">All</option>
+                <option value="completed">Done</option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- todo list containter  -->
+    <div class="todo_container">
+        <h3>Tasks Lists</h3>
+        <ul class="todo_list">
+
+            <!-- todo list dynamically goes here -->
+
+        </ul>
+    </div>
+
+
+
+
+    <!-- main javascript file -->
+    <script src="index.js"></script>
+</body>
+
+</html>

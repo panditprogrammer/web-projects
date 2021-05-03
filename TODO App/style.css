@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    height: 100vh;
+    background-image: linear-gradient(90deg,rgb(221, 158, 40),skyblue);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+/* navbar section  */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(218, 216, 216, 0.438);
+    padding: 0 5%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.home{
+    color: rgb(8, 7, 7);
+    font-size: 1.2rem;
+    font-family: fantasy;
+    transform: rotate(-30deg);
+    text-decoration: none;
+}
+.help{
+    color: rgb(8, 7, 7);
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.main_div{
+    height: auto;
+    width: 100%;
+    margin: 3rem auto;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: -1px 5px 6px 2px gray;
+    
+
+}
+
+/* top heading  */
+.heading{
+    margin: 3rem auto;
+    padding: 10px auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* input section  add item */
+.form{
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+
+}
+
+.form_element{
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form .form_element input,textarea{
+    width: 75%;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+.todo_container .todo_list .todo_item{
+    max-width: 60%;
+    
+}
+
+
+.form input,button,select,option,textarea{
+    background: rgba(202, 202, 202, 0.514);
+    font-size: 14px;
+    outline: none;
+    border: .01rem groove gray;
+    padding: 5px;
+    border-radius: 2px;
+    
+}
+input{
+    color: -internal-light-dark(black, rgba(255, 255, 255, 0));
+}
+button:active{
+    background: rgba(128, 128, 128, 0.596);
+    
+}
+
+.title{
+    text-transform: capitalize;
+    text-align: left;
+    padding: 3px;
+    font-weight: bold;
+
+}
+.title_desc{
+    width: 75%;
+    padding: 5px;
+
+}
+
+.error{
+    display: block;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    text-align: right;
+}
+.check_btn{
+    background: transparent;
+    color: green;
+}
+.delete_btn{
+    background: transparent;
+    color: rgb(153, 0, 0);
+}
+
+/* filter section  */
+.select{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+}
+
+/* todo .todo_container styled here  */
+.todo_container{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.todo_container h3{
+    margin: 1rem auto;
+    text-transform: capitalize;
+    text-decoration:underline;
+
+}
+.todo_container .todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+/* @media screen and (max-width: 700px)
+{
+    .main_div{
+        width: 640px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .main_div{
+        width: 360px;
+    }
+} */
