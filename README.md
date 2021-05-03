@@ -58,3 +58,13 @@ link https://panditprogrammer.github.io/web-projects/Surfer%20Game/
 
 # programming words scramble Game challenges
 link https://panditprogrammer.github.io/web-projects/Word%20Scramble%20Game/
+
+# Flappy Bird Game 
+preview
+![FlappyBird](https://user-images.githubusercontent.com/65272533/116872604-c8f8f300-ac33-11eb-8fbd-102589ee0b64.png)
+
+
+More fun with flappy bird 
+play here https://panditprogrammer.github.io/web-projects/Flapy%20Bird/index.html
+
+
