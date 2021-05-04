@@ -99,5 +99,19 @@ if (playText == "Play Again") {
 
 }
 
+if (window.innerWidth < 800) {
+    document.addEventListener('click', jump_dino);
+    // Function FOR  smartphone friendly
+    function jump_dino() {
+        dino = document.querySelector('.dino');
+        dino.classList.add('animateDino');
+        setTimeout(() => {
+            dino.classList.remove("animateDino");
+        }, 400);
+
+        jump.play();
+    }
+}
+
 
 
