@@ -6,21 +6,36 @@ let jump = new Audio("sound/lobby_game.wav");
 let bgGameSound = new Audio("sound/bgGameSound.mp3");
 let clicksound = new Audio("sound/click.mp3");
 bgGameSound.loop = true;
-waterfall= new Audio("sound/waterfall.wav");
-waterfall.loop= true;
+waterfall = new Audio("sound/waterfall.wav");
+waterfall.loop = true;
 let playText = document.getElementById("play").innerText;
 let StartGame = document.getElementsByClassName("StartGame").innerText;
 
+// mobile friendly feature 
+if (window.outerWidth < 800) {
+    document.addEventListener('click', jump_dino);
+    // Function FOR  smartphone friendly
+    function jump_dino() {
+        dino = document.querySelector('.dino');
+        dino.classList.add('animateDino');
+        setTimeout(() => {
+            dino.classList.remove("animateDino");
+        }, 400);
+
+        jump.play();
+    }
+}
+
+
 function Reload() {
-        location.reload();
-        
+    location.reload();
+
 }
 
 if (playText == "Play Again") {
+
     waterfall.play();
-    
     bgGameSound.play();
-    
 
     play = document.getElementById("play").addEventListener("onclick", Reload);
 
@@ -98,20 +113,5 @@ if (playText == "Play Again") {
     }
 
 }
-
-if (window.innerWidth < 800) {
-    document.addEventListener('click', jump_dino);
-    // Function FOR  smartphone friendly
-    function jump_dino() {
-        dino = document.querySelector('.dino');
-        dino.classList.add('animateDino');
-        setTimeout(() => {
-            dino.classList.remove("animateDino");
-        }, 400);
-
-        jump.play();
-    }
-}
-
 
 
