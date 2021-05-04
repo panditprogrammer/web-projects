@@ -45,7 +45,7 @@
     /* float: right; */
     position: absolute;
     top: 10%;
-    right: 3%;
+    right: 2%;
     letter-spacing: 1.8px;
     font-family: cursive;
     text-shadow: 2px 3px 2px  rgb(235, 255, 144) ,2px 4px 2px  rgb(15, 139, 255);
@@ -159,3 +159,25 @@
     }
 }
 
+/* responsive media query for mobile devices */
+@media screen and (max-width: 800)
+{
+    #welcome{
+        font-size: 30px;
+    }
+    .enter{
+        font-size: 17px;
+    }
+    #created{
+        font-size: 15px;
+    }
+    .h1 ,.score > h1{
+        font-size: 12px;
+    }
+    .gameover{
+        font-size: 30px;
+    }
+    #play{
+        font-size: 12px;
+    }
+}

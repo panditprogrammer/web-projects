@@ -13,7 +13,8 @@ let StartGame = document.getElementsByClassName("StartGame").innerText;
 
 // mobile friendly feature 
 if (window.outerWidth < 800) {
-    document.addEventListener('click', jump_dino);
+    document.addEventListener('touchstart', jump_dino);
+    
     // Function FOR  smartphone friendly
     function jump_dino() {
         dino = document.querySelector('.dino');
