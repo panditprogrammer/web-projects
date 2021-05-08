@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Live Corona status world wide | Panditprogrammer.com</title>
+</head>
+
+<body onload="fetch()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  p-3 ">
+        <a class="navbar-brand pl-5" href="index.html">COVID-19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto pr-5 text-capitalize ">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="fetch_data.html">corona live status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#symptoms">corona Symptoms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#prevention">preventions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Get help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">about corona</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- poster ================================ -->
+
+    <div class="container">
+        <div class="row w-100 h-100 mx-0">
+            <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-lg-2">
+                <div class="left_div w-100 h-100 d-flex justify-content-center align-items-center my-2 py-2">
+                    <img src="images/unity.jpg" alt="" srcset="" width="300" height="300">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-12 order-lg-2 order-lg-1">
+                <div class="right_div w-100 h-100 d-flex justify-content-center align-items-center my-4 p-2">
+                    <h2>Stay Safe Stay At Home & Help to stop Cor<span class="spinning_virus">
+                            <img src="images/c_virus.png" alt="" srcset="" width="50">
+                        </span>na Virus
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- update section ==================================== -->
+    <div class="container-fluid">
+        <h1 class="text-uppercase text-center p-3">COVID-19 live updates world wide</h1>
+        <div class="d-flex justify-content-around align-items-center">
+
+            <!-- create a table for update data  -->
+            <div class="table-responsive ">
+                <table class="table table-bordered table-striped text-center" id="table">
+                    <tr>
+                        <th>Country</th>
+                        <th>Total Confirmed</th>
+                        <th>Total Recovered</th>
+                        <th>Total Deaths</th>
+                        <th>New Confirmed</th>
+                        <th>New Recovered</th>
+                        <th>New Deaths</th>
+                        <th>Last Update</th>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- go to top button ======================== -->
+    <i class="far fa-arrow-alt-circle-up float-right  fs-1" onclick="gotop()" id="gotop"></i>
+
+    <!-- footer section ============================ -->
+    <footer>
+        <div class="container-fluid-expand-lg bg-dark text-light p-3">
+            <p class="m-0 text-center">All Rights Reserved by <a href="https://panditprogrammer.com" target="blank"
+                    class="text-light">Panditprogrammer.com</a></p>
+            <p class="m-0  text-center">Developed by <a href="https://panditprogrammer.com" target="blank"
+                    class="text-light">Pandit Programmer</a></p>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+-->
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script>
+    <!-- custom javascript file  -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
