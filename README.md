@@ -67,4 +67,9 @@ preview
 More fun with flappy bird 
 play here https://panditprogrammer.github.io/web-projects/Flapy%20Bird/index.html
 
+# covid-19 status website
+here is preview for coronavirus status website
+![covid_structure](https://user-images.githubusercontent.com/65272533/117549198-9e090780-b056-11eb-98d4-24d695e2d34f.jpg)
+
+link https://panditprogrammer.github.io/web-projects/covid-19/
 
