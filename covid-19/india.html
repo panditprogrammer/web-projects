@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <title>Live Corona status world wide | Panditprogrammer.com</title>
+    <title>Live India corona status | Panditprogrammer.com</title>
 </head>
 
-<body onload="fetch()">
+<body onload="india_fetch()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark  p-3 ">
         <a class="navbar-brand pl-5" href="index.html">COVID-19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -40,10 +40,10 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="india.html">India corona live status</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="fetch_data.html">world corona live status</a>
                 </li>
                 <li class="nav-item">
@@ -87,20 +87,18 @@
 
     <!-- update section ==================================== -->
     <div class="container-fluid">
-        <h1 class="text-uppercase text-center p-3">COVID-19 live updates world wide</h1>
+        <h1 class="text-uppercase text-center p-3">COVID-19 live updates of India states</h1>
         <div class="d-flex justify-content-around align-items-center">
 
             <!-- create a table for update data  -->
             <div class="table-responsive ">
-                <table class="table table-bordered table-striped text-center" id="table">
+                <table class="table table-bordered table-striped text-center" id="india_table">
                     <tr>
-                        <th>Country</th>
+                        <th>State</th>
                         <th>Total Confirmed</th>
                         <th>Total Recovered</th>
                         <th>Total Deaths</th>
-                        <th>New Confirmed</th>
-                        <th>New Recovered</th>
-                        <th>New Deaths</th>
+                        <th>Migrate Together</th>
                         <th>Last Update</th>
                     </tr>
                 </table>
@@ -153,6 +151,7 @@
         crossorigin="anonymous"></script>
     <!-- custom javascript file  -->
     <script src="script.js"></script>
+    <script src="india_states.js"></script>
 
 
 </body>

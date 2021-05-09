@@ -9,7 +9,7 @@ $.get("https://api.covid19api.com/summary", function (data) {
 
 
     let country_h = document.getElementById("country_h");
-    let country = document.getElementById("country");
+    // let country = document.getElementById("country");
 
     let Total_case_h = document.getElementById("Total_case_h");
 
@@ -21,12 +21,17 @@ $.get("https://api.covid19api.com/summary", function (data) {
 
     // assigning value 
     country_h.innerText = data['Countries'][76]['Country'];
-    Total_case_h.innerText =  data['Countries'][76]['TotalConfirmed']
+    Total_case_h.innerText = data['Countries'][76]['TotalConfirmed']
     Recovered_h.innerText = data['Countries'][76]['TotalRecovered'];
     Deaths_h.innerText = data['Countries'][76]['TotalDeaths'];
-    update_h.innerText = data['Countries'][76]['Date']
 
-    
+    date_update = data['Countries'][76]['Date'].split('T');
+    time_update = date_update[1].split('.')
+    last_update_time = date_update[0] + " " + time_update[0];
+
+    update_h.innerText = last_update_time;
 
 
 })
+
+

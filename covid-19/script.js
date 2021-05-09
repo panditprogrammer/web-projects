@@ -33,10 +33,11 @@ function fetch() {
 
         country_length = data['Countries'].length;
         let _table = document.getElementById('table');
+        let time_update,date_update,last_update_time;
 
-        // console.log(data['Countries'][76]['Country']);
+        console.log(data['Countries']);
 
-        for (let i = 1; i < country_length; i++) {
+        for (let i = 1; i <= country_length; i++) {
             let table_row = _table.insertRow();
             //create cell no.1
             table_row.insertCell(0);
@@ -76,15 +77,16 @@ function fetch() {
             _table.rows[i].cells[6].style.color = "#fff";
             _table.rows[i].cells[6].classList.add('counter');
             // "Date":"2021-05-08T13:15:42.098Z"
+
+            date_update = data['Countries'][i-1]['Date'].split('T');
+            time_update = date_update[1].split('.')
+            last_update_time = date_update[0] + " " + time_update[0];
+
             table_row.insertCell(7);
-            _table.rows[i].cells[7].innerHTML = data['Countries'][i - 1]['Date'];
-            // _table.rows[i].cells[7].style.background = "#d21414";
-            // _table.rows[i].cells[7].style.color = "#fff";
+            _table.rows[i].cells[7].innerHTML = last_update_time;
             _table.rows[i].cells[7].classList.add('counter');
 
         }
-
-
 
     });
 
