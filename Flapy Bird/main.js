@@ -2,8 +2,10 @@ let block = document.getElementById("block");
 let hole = document.getElementById("hole");
 let bird = document.getElementById("bird");
 let game = document.getElementById("game");
+let _score = document.getElementById("_score");
+let _high_score = document.getElementById("_high_score");
 let jumping = 0;
-let count_score = 0;
+let score = 0;
 
 // audio 
 let GameOverSound = new Audio("src/gameOver.mp3");
@@ -18,8 +20,16 @@ hole.addEventListener('animationiteration', () => {
     let random = (Math.random() * 3);
     let top = (random*100)+150;
     hole.style.top = -(top) + "px";
-    count_score +=50;
+    score +=50;
     score_sound.play();
+      // localStorage set hight score 
+      if (score > high_score) {
+        high_score = score;
+        localStorage.setItem("local_score", JSON.stringify(high_score));
+        _high_score.innerHTML = `High Score ${high_score}`;
+    }
+
+    _score.innerText = ` Score ${score}`;
 });
 
 // gravity to falling down bird 
@@ -44,11 +54,11 @@ setInterval(function () {
     {
         GameOverSound.play();
         // display game over div 
-        game.innerHTML= `<div class="gameOverDiv"><h1 class= "gameover">Game Over! <br><span>Score ${count_score}</span></h1>
-        <a href="index.html">Start Again</a></div> `;
+        game.innerHTML= `<div class="gameOverDiv"><h1 class= "gameover">Game Over! <br><span>Score ${score}</span></h1>
+        <a href="main.html">Start Again</a></div> `;
 
         bird.style.top = 100+"px";
-        count_score = 0;
+        score = 0;
         hole.style.animation = "";
         block.style.animation = "";
     }
@@ -84,6 +94,17 @@ function jump_bird()
 
     },10);
 
+}
+
+// high score store in localStorage 
+let local_score = localStorage.getItem("local_score");
+if (local_score === null) {
+    high_score = 0;
+    localStorage.setItem("local_score", JSON.stringify(high_score));
+}
+else {
+    high_score = JSON.parse(local_score);
+    _high_score.innerText = `High score  ${local_score}`;
 }
 
 
