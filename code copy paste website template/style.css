@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    height: 100px;
+    width: 1000px;
+    margin: auto;
+    background-color: lightslategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    margin-left: 50px;
+    color: lightgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 60px;
+}
+
+.navbar .menu{
+    margin-right: 50px;
+}
+.navbar .menu ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar .menu ul a{
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: white;
+    padding: 10px 15px;
+    transition: all 0.5s;
+
+}
+.navbar .menu ul a:hover{
+    color: lightgreen;
+}
+
+/* head  */
+.head{
+    height: 80px;
+    width: 1000px;
+    margin: auto;
+    background: lightgreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2,p{
+    margin-top: 20px;
+    padding: 10px auto;
+}
+
+.container{
+    width: 1000px !important;
+    height: 80vh;
+    margin:10px auto;
+    
+}
+
+
+.toolbar-item .copy-to-clipboard-button{
+    color: white !important;
+    padding: 5px 10px !important;
+    border: 1px solid white!important;
+    cursor: pointer;
+}
+
+footer{
+    height: 100px;
+    width: 1000px;
+    margin: auto;
+    background-color: lightslategray;
+    color: black;
+    text-align: center;
+    padding: 10px auto;
+   
+}

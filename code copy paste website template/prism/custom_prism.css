@@ -1,0 +1,6 @@
+/* custom css  */
+.toolbar-item .copy-to-clipboard-button{
+    color: white !important;
+    padding: 5px 10px !important;
+    border: 1px solid white!important;
+}
